@@ -25,4 +25,10 @@ describe("renders App component", () => {
 
     expect(getByTestId("search-test")).toBeInTheDocument();
   });
+
+  it("renders the ImageResults component", () => {
+    const { getByTestId } = render(<App />);
+
+    expect(getByTestId("image-results-test")).toBeInTheDocument();
+  });
 });

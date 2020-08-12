@@ -7,7 +7,7 @@ describe("renders Search component", () => {
 
   xit("renders placeholder text", () => {
     const { getByText } = render(<Search />);
-    const placeholder = getByText(/this is the search component/i);
+    const placeholder = getByText(/this is the Search component/i);
 
     expect(placeholder).toBeInTheDocument();
   });

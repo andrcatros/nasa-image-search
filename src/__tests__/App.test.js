@@ -1,9 +1,11 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, cleanup } from "@testing-library/react";
 import App from "../components/App";
 
 describe("renders App component", () => {
-  it("renders placeholder text", () => {
+  afterEach(cleanup);
+
+  xit("renders placeholder text", () => {
     const { getByText } = render(<App />);
     const placeholder = getByText(/Hello World/i);
 

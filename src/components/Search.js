@@ -4,7 +4,7 @@ import "../styles/Search.css";
 
 const Search = () => {
   return (
-    <div className="search">
+    <div className="search" data-testid="search-test">
       <p>this is the Search component</p>{" "}
     </div>
   );

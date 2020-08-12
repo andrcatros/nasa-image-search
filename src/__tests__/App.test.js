@@ -10,9 +10,17 @@ describe("renders App component", () => {
     expect(placeholder).toBeInTheDocument();
   });
 
+  it("renders the NASA logo", () => {
+    const { getByAltText } = render(<App />);
+    const logo = getByAltText(/NASA logo/i);
+
+    expect(logo).toBeInTheDocument();
+    expect(logo).toHaveClass("logo");
+  });
+
   it("renders the Search component", () => {
     const { getByTestId } = render(<App />);
 
-    expect(getByTestId("search-test")).toBeInDocument();
+    expect(getByTestId("search-test")).toBeInTheDocument();
   });
 });

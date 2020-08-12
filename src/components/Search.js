@@ -23,7 +23,7 @@ const Search = ({ setSearchResults }) => {
   };
 
   return (
-    <div className="search" data-testid="search-test">
+    <div className="search-form" data-testid="search-test">
       <form onSubmit={handleSubmit}>
         <label htmlFor="search-input">
           <input

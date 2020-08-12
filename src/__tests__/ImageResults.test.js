@@ -13,7 +13,7 @@ describe("renders Search component", () => {
     expect(placeholder).toBeInTheDocument();
   });
 
-  it("renders images when passed href links", () => {
+  it("renders images when passed array of JSON data objects", () => {
     const moonDataArray = moonArray;
 
     const { getByText } = render(

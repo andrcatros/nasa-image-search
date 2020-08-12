@@ -1,12 +1,25 @@
 import React, { useState } from "react";
 
 import "../styles/Search.css";
+import getImages from "./getImages";
 
-const Search = () => {
+const Search = ({ setSearchResults }) => {
   const [search, setSearch] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const imagesArray = await getImages(search);
+
+    // invalid search queries do not return a 404 status code from the NASA API so to clearly differentiate searchResults's state
+    // after invalid query from searchResult's initial state (empty array) I have set searchResults to ["invalid query"]
+    if (imagesArray.length === 0) {
+      setSearchResults(["invalid query"]);
+    } else {
+      setSearchResults(imagesArray);
+    }
+
+    setSearch("");
   };
 
   return (

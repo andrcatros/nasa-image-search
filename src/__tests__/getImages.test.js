@@ -1,4 +1,3 @@
-import axios from "axios";
 import getImages from "../components/getImages";
 
 describe("makes GET requests to NASA API and returns parsed image URL", () => {

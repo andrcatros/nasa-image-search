@@ -13,7 +13,7 @@ function App() {
 
       <Search setSearchResults={setSearchResults} />
 
-      <ImageResults searchResults={searchResults} />
+      {searchResults && <ImageResults searchResults={searchResults} />}
     </div>
   );
 }

@@ -10,15 +10,15 @@
 }
 
 .card-image {
-  width: 200px;
+  width: 400px;
   padding: 17px;
 }
 
 .card-text {
   padding: 17px;
   flex-wrap: wrap;
-  width: 200px;
-  font-size: 14px;
+  width: 400px;
+  font-size: 18px;
 }
 
 .image-results-error {

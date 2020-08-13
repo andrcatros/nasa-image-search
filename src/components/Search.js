@@ -24,17 +24,19 @@ const Search = ({ setSearchResults }) => {
 
   return (
     <div className="search-form" data-testid="search-test">
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} name="Search Form">
         <label htmlFor="search-input">
-          <input
-            id="search-input"
-            name="search-input"
-            type="text"
-            className="search-input"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-          />
+          Enter single keyword: <br />
         </label>
+        <input
+          id="search-input"
+          name="search-input"
+          type="text"
+          className="search-input"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+
         <button
           type="submit"
           className="search-button"

@@ -1,0 +1,33 @@
+.image-detail {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.image-detail-panel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.go-back-button {
+  display: inline-block;
+  margin-top: 36px;
+  background-color: #ced5de;
+  border: none;
+  height: 37px;
+  width: 210px;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.image-detail-description {
+  padding: 30px;
+  flex-wrap: wrap;
+  font-size: 18px;
+}
+
+.image-detail-photo {
+  width: auto;
+}

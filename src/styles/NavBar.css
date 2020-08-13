@@ -10,6 +10,20 @@ ul {
 li {
   padding: 5px 10px;
   list-style: none;
-  color: #cf3a2d;
+
   font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: #cf3a2d;
+}
+
+a:hover {
+  background-color: #cf3a2d;
+  color: white;
+}
+
+p > a {
+  color: black;
 }

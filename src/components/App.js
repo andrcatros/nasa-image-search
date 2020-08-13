@@ -5,6 +5,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./Home";
 import ImageDetail from "./ImageDetail";
 import NavBar from "./NavBar";
+import About from "./About";
 
 function App() {
   const [searchResults, setSearchResults] = useState([]);
@@ -34,6 +35,10 @@ function App() {
               <ImageDetail {...props} imageDetail={imageDetail} />
             )}
           ></Route>
+
+          <Route exact path="/about">
+            <About />
+          </Route>
         </Switch>
       </BrowserRouter>
     </div>

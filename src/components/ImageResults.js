@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 
 import "../styles/ImageResults.css";
 
-const ImageResults = ({ searchResults, setImageDetail, imageDetail }) => {
+const ImageResults = ({ searchResults, setImageDetail }) => {
   const onClick = (image) => {
     setImageDetail(image);
   };

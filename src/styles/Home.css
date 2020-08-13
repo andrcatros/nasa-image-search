@@ -1,0 +1,17 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+}
+
+.logo {
+  width: 500px;
+  margin: auto;
+}
+
+.results-message {
+  font-size: 20px;
+  padding: 7px;
+  margin: auto;
+}

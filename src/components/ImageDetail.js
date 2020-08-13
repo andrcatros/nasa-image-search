@@ -19,10 +19,10 @@ const ImageDetail = ({ imageDetail }) => {
           alt={imageDetail.data[0].description}
         />
         <div className="image-detail-description">
-          <h3>Title:</h3> {imageDetail.data[0].title} <br />
-          <h3>Description: </h3>
+          <h4>Title</h4> {imageDetail.data[0].title} <br />
+          <h4>Description</h4>
           {imageDetail.data[0].description} <br />
-          <h3>Date created: </h3>{" "}
+          <h4>Date created</h4>
           {moment(imageDetail.data[0].date_created).format("DD MMM YYYY")}
         </div>
       </div>

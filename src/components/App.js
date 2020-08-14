@@ -6,6 +6,7 @@ import Home from "./Home";
 import ImageDetail from "./ImageDetail";
 import NavBar from "./NavBar";
 import About from "./About";
+import ImageOfTheDay from "./ImageOfTheDay";
 
 function App() {
   const [searchResults, setSearchResults] = useState([]);
@@ -38,6 +39,9 @@ function App() {
 
           <Route exact path="/about">
             <About />
+          </Route>
+          <Route exact path="/image-of-the-day">
+            <ImageOfTheDay />
           </Route>
         </Switch>
       </BrowserRouter>

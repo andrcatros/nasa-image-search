@@ -5,15 +5,17 @@ import "../styles/NavBar.css";
 
 const NavBar = () => {
   return (
-    <div className="NavBar">
+    <div className="navbar">
       <ul>
-        <Link to="/">
-          <li>Home</li>
-        </Link>
-        <li>Image of the Day</li>
-        <Link to="/about">
-          <li>About</li>
-        </Link>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/image-of-the-day">Image of the Day</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
       </ul>
     </div>
   );

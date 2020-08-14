@@ -4,12 +4,12 @@ import "../styles/About.css";
 
 const About = () => {
   return (
-    <div className="About">
+    <div className="about">
       <h2>About</h2>
       <p>
         This website uses React and React Router to enable users to search for
-        images in the <a href="https://images-api.nasa.gov/">NASA Images API</a>
-        . Simply input a valid search query (e.g. "moon", "Saturn", "space" etc)
+        images in the <a href="https://api.nasa.gov/">NASA Images APIs</a>.
+        Simply input a valid search query (e.g. "moon", "Saturn", "space" etc)
         into the search box and the app will fetch images from the API. If you
         do not provide a valid search query, the app will display the message{" "}
         <i>No results found! Please enter a valid search term.</i>{" "}

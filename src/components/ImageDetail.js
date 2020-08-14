@@ -22,7 +22,7 @@ const ImageDetail = ({ imageDetail }) => {
           <h4>Title</h4> {imageDetail.data[0].title} <br />
           <h4>Description</h4>
           {imageDetail.data[0].description} <br />
-          <h4>Date created</h4>
+          <h4>Date Created</h4>
           {moment(imageDetail.data[0].date_created).format("DD MMM YYYY")}
         </div>
       </div>

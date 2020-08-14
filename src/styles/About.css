@@ -1,4 +1,4 @@
-.About {
+.about {
   font-family: "Lato", sans-serif;
   display: flex;
   flex-direction: column;
@@ -8,4 +8,13 @@
   font-size: 20px;
   margin-top: 60px;
   background-color: #e9edf2;
+}
+
+p > a {
+  color: black;
+  text-decoration: underline;
+}
+
+p > a:hover {
+  text-decoration: none;
 }

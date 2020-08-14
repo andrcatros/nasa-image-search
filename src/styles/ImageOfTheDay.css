@@ -1,0 +1,26 @@
+.image-of-the-day {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 800px;
+  height: auto;
+  font-family: "Lato", sans-serif;
+}
+
+.image-of-the-day-title {
+  margin-top: 30px;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+img {
+  padding-bottom: 50px;
+}
+
+.image-of-the-day-description {
+  margin: 15px 0px;
+  padding: 10px 50px 25px;
+  flex-wrap: wrap;
+  font-size: 18px;
+  background-color: #e9edf2;
+}

@@ -23,7 +23,3 @@ a:hover {
   background-color: #cf3a2d;
   color: white;
 }
-
-p > a {
-  color: black;
-}
